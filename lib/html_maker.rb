@@ -3,7 +3,7 @@ class MakeHtml
     markup = content.gsub!(/[<>]/, '') if bypass_html == false
     markup = content unless bypass_html == false
 
-    f = File.new(file_name, 'w+')
+    f = File.new("#{Dir.pwd}/#{file_name}", "w+")
     f.puts "<!DOCTYPE html>"
     f.puts "  <head>"
     f.puts "    <meta charset='utf-8'>"

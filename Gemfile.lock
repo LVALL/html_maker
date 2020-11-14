@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    html_maker (0.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  html_maker
+
+BUNDLED WITH
+   2.1.4

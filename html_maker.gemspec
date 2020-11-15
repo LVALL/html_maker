@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'html_maker'
-  s.version     = '0.0.6'
+  s.version     = '0.0.7'
   s.date        = '2020-11-14'
   s.summary     = "Make html"
   s.description = "Simple html maker"

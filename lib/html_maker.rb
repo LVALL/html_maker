@@ -1,3 +1,5 @@
+require 'nokogiri'
+
 class MakeHtml
   def make_html(content, bypass_html, file_name = 'index.html')
     markup = content.gsub!(/[<>]/, '') if bypass_html == false
@@ -16,5 +18,14 @@ class MakeHtml
     f.puts "  </body>"
     f.puts "</html>"
     f.close
+  end
+
+  def update_html(content, file_name = 'index.html')
+    doc = File.open(file_name) { |f| Nokogiri::HTML(f) }
+    doc.at('div') << content
+
+    file = File.open(file_name, 'w+')
+    file.puts doc
+    file.close
   end
 end

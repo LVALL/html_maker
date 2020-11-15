@@ -1,13 +1,17 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    html_maker (0.0.1)
+    html_maker (0.0.7)
+    mini_portile2 (2.4.0)
+    nokogiri (1.10.10)
+      mini_portile2 (~> 2.4.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  html_maker
+  html_maker (>= 0.0.7)
+  nokogiri
 
 BUNDLED WITH
    2.1.4

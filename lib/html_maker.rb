@@ -12,9 +12,7 @@ class MakeHtml
     f.puts "    <title>My Tamago</title>"
     f.puts "  </head>"
     f.puts "  <body>"
-    f.puts "    <div>"
     f.puts "      #{markup}"
-    f.puts "    </div>"
     f.puts "  </body>"
     f.puts "</html>"
     f.close

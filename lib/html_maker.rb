@@ -22,7 +22,7 @@ class MakeHtml
 
   def update_html(content, file_name = 'index.html')
     doc = File.open(file_name) { |f| Nokogiri::HTML(f) }
-    doc.at('div') << content
+    doc.at('body') << content
 
     file = File.open(file_name, 'w+')
     file.puts doc

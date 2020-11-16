@@ -12,7 +12,10 @@ class MakeHtml
     f.puts "    <title>My Tamago</title>"
     f.puts "  </head>"
     f.puts "  <body>"
-    f.puts "      #{markup}"
+    f.puts "    <script>"
+    f.puts "      setInterval(()=>{ window.location.reload() }, 2000)"
+    f.puts "    </script>"
+    f.puts "    #{markup}"
     f.puts "  </body>"
     f.puts "</html>"
     f.close
@@ -25,5 +28,9 @@ class MakeHtml
     file = File.open(file_name, 'w+')
     file.puts doc
     file.close
+  end
+
+  def open_in_browser(file = 'index.html')
+    system("xdg-open #{Dir.pwd}/#{file}")
   end
 end

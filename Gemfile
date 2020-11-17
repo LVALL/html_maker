@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'html_maker', '>=0.1.0'
+gem 'html_maker', '>=0.1.1'
 gem 'nokogiri'
